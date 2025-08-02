@@ -34,3 +34,24 @@ const today = new Date().toISOString().split('T')[0];
 document.querySelectorAll('input[type="date"]').forEach(input => {
     input.min = today;
 });
+
+//Validacion del destino
+document.querySelector('.search-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Previene el envío tradicional del formulario
+
+    const destino = document.getElementById('destino').value.trim().toLowerCase();
+
+    // Diccionario de destinos válidos y su página respectiva
+    const destinos = {
+        'Tokio, japon': 'japon.html',
+        'Amazonas, Colombia': 'amazonas.html',
+        'Juneau, Alaska': 'alaska.html'
+    };
+
+    // Verifica si el destino ingresado está en la lista
+    if (destinos[destino]) {
+        window.location.href = destinos[destino]; // Redirige a la página correspondiente
+    } else {
+        alert('Destino no disponible. Por favor, selecciona uno válido.');
+    }
+});
