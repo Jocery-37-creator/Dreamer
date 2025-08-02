@@ -43,9 +43,9 @@ document.querySelector('.search-form').addEventListener('submit', function (e) {
 
     // Diccionario de destinos válidos y su página respectiva
     const destinos = {
-        'Tokio, japon': 'japon.html',
-        'Amazonas, Colombia': 'amazonas.html',
-        'Juneau, Alaska': 'alaska.html'
+        'Tokio, japon': 'Destinations/japon.html',
+        'Amazonas, Colombia': 'Destinations/amazonas.html',
+        'Juneau, Alaska': 'Destinations/alaska.html'
     };
 
     // Verifica si el destino ingresado está en la lista
