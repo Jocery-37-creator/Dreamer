@@ -140,7 +140,63 @@
             </div>
         </div>
     </div>
+    <section class="hero" role="banner">
+        <div class="hero-container">
+            <h1>Tokio, Japón</h1>
+            <p>Elije la fecha de tu viaje para ver los mejores precios y planes</p>
 
+            <div class="search-container">
+                <div class="search-tabs" role="tablist">
+                    <p>Alojamientos</p>
+                    <a href="#" class="tab active" role="tab" aria-selected="true">Todos</a>
+                    <a href="#" class="tab" role="tab" aria-selected="false">Hoteles</a>
+                    <a href="#" class="tab" role="tab" aria-selected="false">Alquileres</a>
+                </div>
+
+                <form class="search-form" role="search" aria-label="Búsqueda de paquetes turísticos">
+                    <div class="form-group">
+                        <label for="destino"><i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i>
+                            Destino</label>
+                        <input type="text" id="destino" name="destino" placeholder="Ingresa tu destino" value="Tokio, Japón">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="origen"><i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i>
+                            Origen</label>
+                        <select id="origen" name="origen" required>
+                            <option value="bogota">Bogotá, distrito capital</option>
+                            <option value="medellin">Medellín</option>
+                            <option value="cali">Cali</option>
+                            <option value="barranquilla">Barranquilla</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Fechas</label>
+                        <div class="date-inputs">
+                            <input type="date" name="entrada" aria-label="Fecha de entrada" required>
+                            <input type="date" name="salida" aria-label="Fecha de salida" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Habitaciones</label>
+                        <div class="rooms-selector">
+                            <span><i class="fa-solid fa-key fa-lg" style="color: #434343;"></i></span>
+                            <span class="ident">1</span>
+                            <span><i class="fa-solid fa-user fa-lg"></i></span>
+                            <span>2</span>
+                        </div>
+                    </div>
+                </form>
+                <button id="search-btn" type="submit" class="search-btn" aria-label="Buscar paquetes">
+                    <i class="ident fa-solid fa-magnifying-glass fa-sm"></i>Buscar
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <script src="/util.js"></script>
 </body>
 
 </html>
