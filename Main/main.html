@@ -190,7 +190,7 @@
                         </div>
                     </div>
                 </form>
-                <button type="submit" class="search-btn" aria-label="Buscar paquetes">
+                <button id="search-btn" type="submit" class="search-btn" aria-label="Buscar paquetes">
                     <i class="ident fa-solid fa-magnifying-glass fa-sm"></i>Buscar
                 </button>
             </div>
@@ -344,6 +344,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('search-btn').addEventListener('click', function () {
+            document.querySelector('.search-form').requestSubmit(); 
+        });
+    </script>
 </body>
 
 </html>
