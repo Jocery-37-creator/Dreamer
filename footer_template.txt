@@ -1,0 +1,104 @@
+<<FOOTER TEMPLATE>>
+Format with Shift + Alt + F in destination code on Visual Studio
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Sección superior del footer -->
+        <div class="footer-top">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="/Icons/Dreamer_Logo.png" alt="Dreamer" class="footer-logo-img">
+                    <p class="footer-tagline">Tu compañero de viajes ideal</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <ul>
+                    <li><a href="#">Alojamientos</a></li>
+                    <li><a href="#">Vuelos</a></li>
+                    <li><a href="#">Paquetes turísticos</a></li>
+                    <li><a href="#">Actividades</a></li>
+                    <li><a href="#">Automóviles</a></li>
+                    <li><a href="#">Traslados</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Destinos populares</h3>
+                <ul>
+                    <li><a href="#">Cartagena</a></li>
+                    <li><a href="#">Punta Cana</a></li>
+                    <li><a href="#">San Andrés</a></li>
+                    <li><a href="#">Medellín</a></li>
+                    <li><a href="#">Cancún</a></li>
+                    <li><a href="#">Miami</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Centro de ayuda</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Políticas de cancelación</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+57 (1) 234-5678</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@dreamer.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bogotá, Colombia</span>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Suscríbete a nuestro newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección inferior del footer -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <p>&copy; 2024 Dreamer. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-bottom-right">
+                <div class="footer-payments">
+                    <span>Métodos de pago:</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-paypal"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
