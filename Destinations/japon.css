@@ -15,7 +15,9 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #4ab5d0 0%, #119eba 100%);
+    background-image: url('/Places/JaponWall.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     color: white;
     padding: 2rem 0;
 }
@@ -44,12 +46,10 @@ body {
 /* Search Form */
 
 .search-container {
-    background-image: url('/Forms/Dreamer_TicketSearch.png');
+    background-image: url('/Forms/Dreamer_TicketSearchRed.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-
-    backdrop-filter: blur(10px);
     padding: 1.5rem 2.5rem;
     margin: 0 auto;
     text-align: center;
@@ -85,9 +85,9 @@ body {
 
 .tab.active {
     background: white;
-    color: rgb(79, 160, 173);
+    color: rgb(173, 79, 79);
     font-weight: 700;
-    text-shadow: 0 1px 3px rgba(79, 160, 173, 0.4);
+    text-shadow: 0 1px 3px rgba(173, 79, 79, 0.4);
 }
 
 .search-form {
