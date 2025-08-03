@@ -1,11 +1,3 @@
-// 🔹 Función para normalizar texto (elimina tildes y convierte a minúsculas)
-function normalizarTexto(texto) {
-    return texto
-        .normalize("NFD")                   // Descompone acentos
-        .replace(/[\u0300-\u036f]/g, "")    // Elimina marcas diacríticas
-        .toLowerCase();                     // Convierte a minúsculas
-}
-
 // 🔹 Tab functionality
 document.querySelectorAll('.tab').forEach(tab => {
     tab.addEventListener('click', function (e) {
@@ -34,17 +26,24 @@ document.querySelector('.search-form').addEventListener('submit', function (e) {
         return;
     }
 
-    const destino = normalizarTexto(destinoRaw); // Normalizamos
-
     // Diccionario de destinos válidos (también normalizados)
     const destinos = {
-        'tokio, japon': '../Destinations/japon.html',
-        'amazonas, colombia': '../Destinations/amazonas.html',
-        'juneau, alaska': '../Destinations/alaska.html'
+        'Tokio, Japon': '../Destinations/japon.html',
+        'Amazonas, Colombia': '../Destinations/amazonas.html',
+        'Juneau, Alaska': '../Destinations/alaska.html'
     };
 
-    if (destinos[destino]) {
-        window.location.href = destinos[destino];
+    if (destinos[destinoRaw]) {
+        const fechaIda = document.getElementById('entrada')?.value || '';
+        const fechaVuelta = document.getElementById('salida')?.value || '';
+
+        // Codifica los valores para que puedan ir en la URL
+        const params = new URLSearchParams({
+            fechaIda,
+            fechaVuelta
+        });
+
+        window.location.href = `${destinos[destinoRaw]}?${params.toString()}`;
     } else {
         alert('Destino no disponible. Por favor, selecciona uno válido.');
     }
@@ -54,5 +53,18 @@ document.querySelector('.search-form').addEventListener('submit', function (e) {
 const today = new Date().toISOString().split('T')[0];
 document.querySelectorAll('input[type="date"]').forEach(input => {
     input.min = today;
+});
+
+document.getElementById('entrada').addEventListener('change', function () {
+    const fechaIda = this.value;
+
+    const fechaVueltaInput = document.getElementById('salida');
+
+    // Si ya se había seleccionado una fecha de vuelta que ahora es inválida, la borramos
+    if (fechaVueltaInput.value && fechaVueltaInput.value < fechaIda) {
+        fechaVueltaInput.value = '';
+    }
+
+    fechaVueltaInput.min = fechaIda;
 });
 

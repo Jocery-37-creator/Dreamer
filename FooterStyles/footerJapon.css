@@ -1,8 +1,8 @@
 /* Footer Styles */
 .footer {
-    background: linear-gradient(135deg, #3a7f88 0%, #29717e 100%);
+    background: linear-gradient(135deg, #883a3a 0%, #7e2929 100%);
     color: white;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 .footer-container {
@@ -49,7 +49,7 @@
 }
 
 .footer-section ul li a:hover {
-    color: #4fa0ad;
+    color: #ad4f4f;
     transform: translateX(5px);
 }
 
@@ -87,7 +87,7 @@
 }
 
 .footer-social a:hover {
-    background: #4fa0ad;
+    background: #ad4f4f;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(79, 160, 173, 0.3);
 }
@@ -107,7 +107,7 @@
 }
 
 .contact-item i {
-    color: #7cabb3e4;
+    color: #b37c7ce4;
     width: 16px;
     text-align: center;
 }
@@ -142,13 +142,13 @@
 
 .newsletter-form input:focus {
     outline: none;
-    border-color: #4fa0ad;
+    border-color: #ad4f4f;
     background: rgba(255, 255, 255, 0.15);
 }
 
 .newsletter-form button {
     padding: 0.8rem 1.5rem;
-    background: #4fa0ad;
+    background: #ad4f4f;
     color: white;
     border: none;
     border-radius: 5px;
@@ -160,7 +160,7 @@
 }
 
 .newsletter-form button:hover {
-    background: #46919d;
+    background: #9d4646;
     transform: translateY(-1px);
 }
 
@@ -201,7 +201,7 @@
 }
 
 .payment-icons i:hover {
-    color: #4fa0ad;
+    color: #ad4f4f;
     transform: scale(1.1);
 }
 
