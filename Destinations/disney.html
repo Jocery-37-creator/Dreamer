@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dreamer - Alaska</title>
+    <title>Dreamer - Disney</title>
     <link rel="shortcut icon" href="/Icons/Icon_TabD.png" type="image/x-icon">
-    <link rel="stylesheet" href="alaska.css">
-    <link rel="stylesheet" href="/HeaderStyles/headerAlaska.css">
-    <link rel="stylesheet" href="/FooterStyles/footerAlaska.css">
+    <link rel="stylesheet" href="disney.css">
+    <link rel="stylesheet" href="/HeaderStyles/headerDisney.css">
+    <link rel="stylesheet" href="/FooterStyles/footerDisney.css">
     <script src="https://kit.fontawesome.com/0507741b90.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+    <!-- header -->
     <header class="header" role="banner">
         <div class="header-container">
-            <a href="/Main/main.html" aria-label="Dreamer - Página principal"><img class="logo"
-                    src="/Icons/Dreamer_LogoBlueS.png" /></a>
+            <a href="main.html" aria-label="Dreamer - Página principal"><img class="logo"
+                    src="/Icons/Dreamer_LogoPurple.png" /></a>
             <nav class="nav-menu" role="navigation" aria-label="Menú principal">
                 <a href="#" class="nav-item" aria-label="Alojamientos">
                     <span><img class="nav-icon" src="/Icons/Accommodation.png" /></span>
@@ -27,9 +27,8 @@
                     <span><img style="opacity:0.75" class="nav-icon" src="/Icons/Plane.png" /></span>
                     <span>Vuelos</span>
                 </a>
-                <a href="/Main/main.html" class="nav-item active" aria-label="Paquetes - Página actual"
-                    aria-current="page">
-                    <span><img class="nav-icon active" src="/Icons/Packs.png" /></span>
+                <a href="#" class="nav-item" aria-label="Paquetes - Página actual" aria-current="page">
+                    <span><img class="nav-icon" src="/Icons/Packs.png" /></span>
                     <span>Paquetes</span>
                 </a>
                 <a href="#" class="nav-item" aria-label="Ofertas">
@@ -48,8 +47,8 @@
                     <span><img class="nav-icon" src="/Icons/Transfers.png" /></span>
                     <span>Traslados</span>
                 </a>
-                <a href="#" class="nav-item" aria-label="Disney">
-                    <span><img style="opacity:0.75" class="nav-icon" src="/Icons/Disney.png" /></span>
+                <a href="#" class="nav-item active" aria-label="Disney">
+                    <span><img style="opacity:0.75" class="nav-icon active" src="/Icons/Disney.png" /></span>
                     <span>Disney</span>
                 </a>
             </nav>
@@ -141,160 +140,85 @@
             </div>
         </div>
     </div>
-    <section class="hero" role="banner">
-        <div class="hero-container">
-            <h1>Juneau, Alaska</h1>
-            <p>Elije la fecha de tu viaje para ver los mejores precios y planes</p>
-
-            <div class="search-container">
-                <div class="search-tabs" role="tablist">
-                    <p>Alojamientos</p>
-                    <a href="#" class="tab active" role="tab" aria-selected="true">Todos</a>
-                    <a href="#" class="tab" role="tab" aria-selected="false">Hoteles</a>
-                    <a href="#" class="tab" role="tab" aria-selected="false">Alquileres</a>
-                </div>
-
-                <form class="search-form" role="search" aria-label="Búsqueda de paquetes turísticos">
-                    <div class="form-group">
-                        <label for="destino"><i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i>
-                            Destino</label>
-                        <select id="destino" name="destino" required>
-                            <option value="Juneau, Alaska">Juneau, Alaska</option>
-                            <option value="Amazonas, Colombia">Amazonas, Colombia</option>
-                            <option value="Tokio, Japon">Tokio, Japón</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="origen"><i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i>
-                            Origen</label>
-                        <select id="origen" name="origen" required>
-                            <option value="bogota">Bogotá, distrito capital</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Fechas</label>
-                        <div class="date-inputs">
-                            <input type="date" id="entrada" name="entrada" aria-label="Fecha de entrada" required>
-                            <input type="date" id="salida" name="salida" aria-label="Fecha de salida" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Habitaciones</label>
-                        <div class="rooms-selector">
-                            <span><i class="fa-solid fa-key fa-lg" style="color: #434343;"></i></span>
-                            <span class="ident">1</span>
-                            <span><i class="fa-solid fa-user fa-lg"></i></span>
-                            <span>2</span>
-                        </div>
-                    </div>
-                </form>
-                <button id="search-btn" type="submit" class="search-btn" aria-label="Buscar paquetes">
-                    <i class="ident fa-solid fa-magnifying-glass fa-sm"></i>Buscar
-                </button>
+    <section class="disney-section">
+        <div class="disney-container">
+            <div class="disney-header">
+                <h1 class="disney-title">Disney</h1>
+                <p class="disney-subtitle">Elije la fecha de tu viaje para ver los mejores precios y planes</p>
             </div>
-        </div>
-    </section>
 
-    <!--Hoteles-->
-    <section>
-        <div class="accommodations-container">
-            <h1 style="margin-bottom: 1rem; color: #434343; font-size: 2rem;">Alojamientos disponibles en Juneau</h1>
+            <div class="offers-container">
+                <h2 class="offers-title">Ofertas imperdibles</h2>
 
-            <div class="accommodations-grid">
-                <!-- Card 1 -->
-                <div class="accommodation-card">
-                    <div class="card-image">
-                        <img src="/Places/AuraVilla.jpg" alt="Aurora Villa">
+                <div class="packages-grid">
+                    <!-- Paquete 1 -->
+                    <div class="package-circle">
+                        <span class="promotion-label">PROMOCIÓN</span>
+                        <div class="promotion-text">Entrada de 4 días + 2 gratis!</div>
+                        <ul class="package-list">
+                            <li>
+                                <i class="fas fa-check check-icon"></i>
+                                Paquete Magic Kingdom
+                            </li>
+                            <li>
+                                <i class="fas fa-check check-icon"></i>
+                                Parque Epcot
+                            </li>
+                            <li>
+                                <i class="fas fa-check check-icon"></i>
+                                Parque Disney's Animal Kingdom
+                            </li>
+                        </ul>
+                        <div class="package-price">$1'930.000</div>
                     </div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3 class="hotel-name">Aurora Villa</h3>
-                            <p class="hotel-distance">A 50 km del centro</p>
-                        </div>
 
-                        <div class="card-rating">
-                            <span class="rating-text">Nivel de reseña (0-10):</span>
-                            <div class="rating-badge very-good">
-                                <i class="fas fa-user"></i>
-                                8.0
-                            </div>
-                        </div>
+                    <!-- Paquete 2 -->
+                    <div class="package-circle">
+                        <span class="promotion-label">PROMOCIÓN</span>
+                        <div class="promotion-text">Entrada de 5 días + 2 gratis!</div>
+                        <ul class="package-list">
+                            <li>
+                                <i class="fas fa-check check-icon"></i>
+                                Paquete Magic Kingdom
+                            </li>
+                            <li>
+                                <i class="fas fa-check check-icon"></i>
+                                Parque Epcot
+                            </li>
+                            <li>
+                                <i class="fas fa-check check-icon"></i>
+                                Parque Disney's Animal Kingdom
+                            </li>
+                        </ul>
+                        <div class="package-price">$2'180.000</div>
+                    </div>
 
-                        <div class="amenities">
-                            <div class="hotel-category">
-                                <i class="fa-solid fa-hotel fa-lg" style="color: #454545;"></i>
-                            </div>
-                            <div class="stars">
-                                <i class="fas fa-star star"></i>
-                                <i class="fas fa-star star"></i>
-                                <i class="fas fa-star star"></i>
-                                <i class="fas fa-star star"></i>
-                                <i class="far fa-star star" style="opacity: 0.3;"></i>
-                            </div>
-                            <i class="fas fa-wifi amenity-icon" style="color: #454545;" title="WiFi gratuito"></i>
-                            <i class="fas fa-thermometer-half amenity-icon" style="color: #454545;"
-                                title="Aire acondicionado"></i>
-                        </div>
-
-                        <div class="card-actions">
-                            <div class="price-section">
-                                <span class="price-label">Desde</span>
-                                <span class="price">$586.000</span>
-                            </div>
-                            <button class="select-btn">Elegir fecha</button>
-                        </div>
+                    <!-- Paquete 3 -->
+                    <div class="package-circle">
+                        <span class="promotion-label">PROMOCIÓN</span>
+                        <div class="promotion-text">Entrada de 7 días + 2 gratis!</div>
+                        <ul class="package-list">
+                            <li>
+                                <i class="fas fa-check check-icon"></i>
+                                Paquete Magic Kingdom
+                            </li>
+                            <li>
+                                <i class="fas fa-check check-icon"></i>
+                                Parque Epcot
+                            </li>
+                            <li>
+                                <i class="fas fa-check check-icon"></i>
+                                Parque Disney's Animal Kingdom
+                            </li>
+                        </ul>
+                        <div class="package-price">$2'330.000</div>
                     </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="accommodation-card">
-                    <div class="card-image">
-                        <img src="/Places/HotSprings.jpg" alt="Chena Hot Springs Resort">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3 class="hotel-name">Chena Hot Springs Resort</h3>
-                            <p class="hotel-distance">A 32,48 km del centro</p>
-                        </div>
-
-                        <div class="card-rating">
-                            <span class="rating-text">Nivel de reseña (0-10):</span>
-                            <div class="rating-badge very-good">
-                                <i class="fas fa-user"></i>
-                                8.4
-                            </div>
-                        </div>
-
-                        <div class="amenities">
-                            <div class="hotel-category">
-                                <i class="fa-solid fa-hotel fa-lg" style="color: #454545;"></i>
-                            </div>
-                            <div class="stars">
-                                <i class="fas fa-star star"></i>
-                                <i class="fas fa-star star"></i>
-                                <i class="fas fa-star star"></i>
-                                <i class="far fa-star star" style="opacity: 0.3;"></i>
-                                <i class="far fa-star star" style="opacity: 0.3;"></i>
-                            </div>
-                            <i class="fas fa-wifi amenity-icon" style="color: #454545;" title="WiFi gratuito"></i>
-                            <i class="fas fa-swimming-pool amenity-icon" style="color: #454545;" title="Piscina"></i>
-                            <i class="fas fa-utensils amenity-icon" style="color: #454545;" title="Restaurante"></i>
-                            <i class="fas fa-thermometer-half amenity-icon" style="color: #454545;"
-                                title="Aire acondicionado"></i>
-
-                        </div>
-
-                        <div class="card-actions">
-                            <div class="price-section">
-                                <span class="price-label">Desde</span>
-                                <span class="price">$445.000</span>
-                            </div>
-                            <button class="select-btn">Elegir fecha</button>
-                        </div>
-                    </div>
+                <div class="buttons-row">
+                    <button class="select-date-btn">Elegir fecha</button>
+                    <button class="select-date-btn">Elegir fecha</button>
+                    <button class="select-date-btn">Elegir fecha</button>
                 </div>
             </div>
         </div>
@@ -400,27 +324,6 @@
             </div>
         </div>
     </footer>
-    <script src="/util.js"></script>
-    <script src="/headerMenu.js"></script>
-    <script>
-        const params = new URLSearchParams(window.location.search);
-
-        const fechaIda = params.get('fechaIda') || 'No indicada';
-        const fechaVuelta = params.get('fechaVuelta') || 'No indicada';
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const inputIda = document.getElementById('entrada');
-            const inputVuelta = document.getElementById('salida');
-
-            if (inputIda) inputIda.value = fechaIda;
-            if (inputVuelta) inputVuelta.value = fechaVuelta;
-        });
-    </script>
-    <script>
-        document.getElementById('search-btn').addEventListener('click', function () {
-            document.querySelector('.search-form').requestSubmit();
-        });
-    </script>
 </body>
 
 </html>

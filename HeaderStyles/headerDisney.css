@@ -22,7 +22,7 @@
 }
 
 .nav-menu {
-    background: rgba(153, 68, 68, 0.1);
+    background: rgba(113, 68, 153, 0.1);
     border-radius: 10px;
     padding: 0.5rem;
     display: flex;
@@ -49,11 +49,11 @@
 
 .nav-item:hover {
     background: white;
-    color: #ad4f4f;
+    color: #70008f;
 }
 
 .nav-item.active {
-    background: #ad4f4f;
+    background: #7b4499;
     color: white;
     text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
 }
@@ -68,9 +68,8 @@
     transform: scale(1.1);
 }
 
-
 .nav-icon.active {
-    filter: invert(100%) brightness(2);
+    filter: invert(100%) brightness(2) saturate(2);
 }
 
 .header-actions {
@@ -94,12 +93,12 @@
 
 .action-btn:hover {
     background: #f0f8ff;
-    color: #ad4f4f;
+    color: #824499;
 }
 
 .help-btn {
     color: white;
-    background-color: #9d4646;
+    background-color: #844499;
     mask: url('/Forms/Dreamer_help.svg') no-repeat center;
     mask-size: cover;
 }
@@ -188,12 +187,12 @@
 
 .mobile-nav-item:hover {
     background: #f0f8ff;
-    color: #ad4f4f;
+    color: #7b4499;
 }
 
 .mobile-nav-item.active {
-    background: #ad4f4f;
-    border-radius: 10px ;
+    background: #7b4499;
+    border-radius: 10px;
     color: white;
 }
 
@@ -205,7 +204,7 @@
     font-size: 1.5rem;
 }
 
-.mobile-nav-icon.active{
+.mobile-nav-icon.active {
     filter: invert(1) brightness(2);
 }
 
@@ -229,11 +228,11 @@
 
 .mobile-action-btn:hover {
     background: #f0f8ff;
-    color: #ad4f4f;
+    color: #7d4499;
 }
 
 .mobile-action-btn.help {
-    background: #ad4f4f;
+    background: #7d4499;
     color: white;
 }
 

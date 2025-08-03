@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Tahoma;
+    line-height: 1.6;
+    color: #333;
+    background-color: white;
+}
+
+.disney-section {
+    background-image: url('/Places/DisneyWorld.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 3rem 2rem 4rem 2rem;
+    /* Más padding superior */
+    position: relative;
+}
+
+/* Overlay para mejorar legibilidad */
+.disney-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.disney-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.disney-header {
+    margin-bottom: 2.5rem;
+    /* Más espacio */
+    text-align: left;
+    text-indent: -1rem;
+}
+
+.disney-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.2rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    letter-spacing: 3px;
+    line-height: 1.1;
+}
+
+.disney-subtitle {
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    max-width: 700px;
+    line-height: 1.4;
+    margin-top: 1rem;
+}
+
+/* Contenedor de ofertas */
+.offers-container {
+    background: linear-gradient(135deg, #8B5A96 0%, #6B4C93 50%, #4A3C8A 100%);
+    border-radius: 20px;
+    padding: 3.5rem 3rem;
+    /* Más padding */
+    box-shadow: 0 25px 50px rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    animation: shimmer 2s ease-in-out infinite;
+    
+}
+
+.offers-title {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 4rem;
+    /* Más espacio */
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    line-height: 1.2;
+}
+
+/* Grid de paquetes */
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    /* Más gap */
+    margin-bottom: 3rem;
+    /* Más espacio */
+}
+
+/* Círculos de paquetes */
+.package-circle {
+    background: white;
+    border-radius: 50%;
+    width: 300px;
+    /* Más grande */
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    /* Más padding */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    position: relative;
+    margin: 0 auto;
+}
+
+.package-circle:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.promotion-label {
+    position: absolute;
+    top: 25px;
+    font-size: 0.8rem;
+    color: #8B5A96;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Efecto de brillo rosa para el texto promocional */
+.promotion-text {
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    /* Más espacio */
+    line-height: 1.3;
+
+    /* Efecto de brillo rosa */
+    background: linear-gradient(45deg, #E91E63, #FF6B9D, #E91E63, #FF6B9D);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Animación de brillo */
+    animation: shimmer 2s ease-in-out infinite;
+
+    /* Sombra adicional para el efecto */
+    filter: drop-shadow(0 0 8px rgba(233, 30, 99, 0.3));
+}
+
+/* Animación de brillo */
+@keyframes shimmer {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.package-list {
+    list-style: none;
+    margin-bottom: 2rem;
+    /* Más espacio */
+    width: 100%;
+}
+
+.package-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+    /* Más espacio entre items */
+    font-size: 0.95rem;
+    color: #6B4C93;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.check-icon {
+    color: #E91E63;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.package-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Botones */
+.buttons-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    /* Más gap */
+    margin-top: 3rem;
+    /* Más espacio */
+}
+
+.select-date-btn {
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    color: white;
+    border: none;
+    padding: 1.2rem 2.5rem;
+    /* Más padding */
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+    text-transform: none;
+    letter-spacing: 0.5px;
+    width: 220px;
+    margin: 0 auto;
+    font-family: Inter, Tahoma;
+}
+
+.select-date-btn:hover {
+    background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(33, 150, 243, 0.5);
+}
+
+/* Responsive Design Mejorado */
+@media (max-width: 1200px) {
+    .disney-section {
+        padding: 4rem 2rem 3rem 2rem;
+    }
+
+    .disney-title {
+        font-size: 3.8rem;
+    }
+
+    .offers-container {
+        padding: 3rem 2rem;
+    }
+
+    .package-circle {
+        width: 280px;
+        height: 280px;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .disney-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .disney-title {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .disney-subtitle {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .offers-container {
+        padding: 3rem 2rem;
+    }
+
+    .offers-title {
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+        justify-items: center;
+    }
+
+    .buttons-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .package-circle {
+        width: 260px;
+        height: 260px;
+        padding: 2rem;
+    }
+
+    .promotion-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .disney-section {
+        padding: 2rem 1rem;
+        background-attachment: scroll;
+        min-height: auto;
+    }
+
+    .disney-header {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .disney-title {
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .disney-subtitle {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .offers-container {
+        padding: 2.5rem 1.5rem;
+        border-radius: 25px;
+    }
+
+    .offers-title {
+        font-size: 1.9rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .packages-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .buttons-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .package-circle {
+        width: 300px;
+        height: 300px;
+        padding: 2.5rem;
+    }
+
+    .promotion-text {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .package-list li {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .select-date-btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 1.2rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .disney-section {
+        padding: 1.5rem 0.8rem;
+    }
+
+    .disney-title {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .disney-subtitle {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .offers-container {
+        padding: 2rem 1rem;
+        border-radius: 20px;
+    }
+
+    .offers-title {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .packages-grid {
+        gap: 2.5rem;
+    }
+
+    .package-circle {
+        width: 280px;
+        height: 280px;
+        padding: 2rem;
+    }
+
+    .promotion-text {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .package-list li {
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .package-price {
+        font-size: 1.3rem;
+    }
+
+    .select-date-btn {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .disney-title {
+        font-size: 1.9rem;
+    }
+
+    .package-circle {
+        width: 260px;
+        height: 260px;
+        padding: 1.5rem;
+    }
+
+    .promotion-text {
+        font-size: 0.95rem;
+    }
+}
+
+/* Animaciones mejoradas */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.package-circle {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.package-circle:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.package-circle:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.package-circle:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+/* Efecto adicional para el hover del texto promocional */
+.package-circle:hover .promotion-text {
+    animation-duration: 1s;
+    filter: drop-shadow(0 0 12px rgba(233, 30, 99, 0.5));
+}
