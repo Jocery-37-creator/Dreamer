@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamer - Japon</title>
+    <link rel="shortcut icon" href="/Icons/Icon_TabD.png" type="image/x-icon">
+    <link rel="stylesheet" href="amazonas.css">
+    <link rel="stylesheet" href="/HeaderStyles/headerAmazonas.css">
+    <link rel="stylesheet" href="/FooterStyles/footerAmazonas.css">
+    <script src="https://kit.fontawesome.com/0507741b90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header" role="banner">
+        <div class="header-container">
+            <a href="/Main/main.html" aria-label="Dreamer - Página principal"><img class="logo"
+                    src="/Icons/Dreamer_LogoGreen.png" /></a>
+            <nav class="nav-menu" role="navigation" aria-label="Menú principal">
+                <a href="#" class="nav-item" aria-label="Alojamientos">
+                    <span><img class="nav-icon" src="/Icons/Accommodation.png" /></span>
+                    <span>Alojamientos</span>
+                </a>
+                <a href="#" class="nav-item" aria-label="Vuelos">
+                    <span><img style="opacity:0.75" class="nav-icon" src="/Icons/Plane.png" /></span>
+                    <span>Vuelos</span>
+                </a>
+                <a href="/Main/main.html" class="nav-item active" aria-label="Paquetes - Página actual"
+                    aria-current="page">
+                    <span><img class="nav-icon active" src="/Icons/Packs.png" /></span>
+                    <span>Paquetes</span>
+                </a>
+                <a href="#" class="nav-item" aria-label="Ofertas">
+                    <span><img style="opacity:0.75" class="nav-icon" src="/Icons/Sale.png" /></span>
+                    <span>Ofertas</span>
+                </a>
+                <a href="#" class="nav-item" aria-label="Actividades">
+                    <span><img class="nav-icon" src="/Icons/Activities.png" /></span>
+                    <span>Actividades</span>
+                </a>
+                <a href="#" class="nav-item" aria-label="Automóviles">
+                    <span><img class="nav-icon" src="/Icons/Cars.png" /></span>
+                    <span>Automóviles</span>
+                </a>
+                <a href="#" class="nav-item" aria-label="Traslados">
+                    <span><img class="nav-icon" src="/Icons/Transfers.png" /></span>
+                    <span>Traslados</span>
+                </a>
+                <a href="#" class="nav-item" aria-label="Disney">
+                    <span><img style="opacity:0.75" class="nav-icon" src="/Icons/Disney.png" /></span>
+                    <span>Disney</span>
+                </a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#" class="action-btn help-btn" aria-label="Ayuda">
+                    <span><i class="fa-regular fa-circle-question fa-xl"></i></span>
+                    <span style="font-weight: 700; margin-left: 3px; padding-right: 5px;">Ayuda</span>
+                </a>
+                <a href="#" class="action-btn" aria-label="Mis viajes">
+                    <span><img class="action-icon" src="/Icons/Trips.png"></span>
+                    <span style="font-weight: 700; margin-left: 3px; color: rgb(46, 46, 46);">Mis viajes</span>
+                </a>
+                <a href="#" class="action-btn" aria-label="Afíliate">
+                    <span><img class="action-icon" src="/Icons/Join.png"></span>
+                    <span style="font-weight: 700; margin-left: 3px; color: rgb(46, 46, 46)">Afíliate</span>
+                </a>
+                <a href="#" class="action-btn" aria-label="Perfil de usuario">
+                    <span class="user burger"><i class="fa-solid fa-bars fa-xl"></i></span>
+                    <span class="user"><i class="fa-solid fa-user fa-2xl"></i></span>
+                </a>
+                <button class="hamburger" aria-label="Menú" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <nav role="navigation" aria-label="Menú móvil">
+                <a href="#" class="mobile-nav-item">
+                    <span class="mobile-nav-icon"><img src="/Icons/Accommodation.png" style="height: 32px;"></span>
+                    <span>Alojamientos</span>
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <span class="mobile-nav-icon"><img src="/Icons/Plane.png"
+                            style="height: 32px; opacity: 0.75;"></span>
+                    <span>Vuelos</span>
+                </a>
+                <a href="#" class="mobile-nav-item active">
+                    <span class="mobile-nav-icon active"><img src="/Icons/Packs.png" style="height: 32px;"></span>
+                    <span>Paquetes</span>
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <span class="mobile-nav-icon"><img src="/Icons/Sale.png"
+                            style="height: 32px; opacity: 0.75;"></span>
+                    <span>Ofertas</span>
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <span class="mobile-nav-icon"><img src="/Icons/Activities.png" style="height: 32px;"></span>
+                    <span>Actividades</span>
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <span class="mobile-nav-icon"><img src="/Icons/Cars.png" style="height: 32px;"></span>
+                    <span>Automóviles</span>
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <span class="mobile-nav-icon"><img src="/Icons/Transfers.png" style="height: 32px;"></span>
+                    <span>Traslados</span>
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <span class="mobile-nav-icon"><img src="/Icons/Disney.png"
+                            style="height: 32px; opacity: 0.75;"></span>
+                    <span>Disney</span>
+                </a>
+            </nav>
+
+            <div class="mobile-actions">
+                <a href="#" class="mobile-action-btn help">
+                    <span><i class="fa-regular fa-circle-question fa-xl"></i></span>
+                    <span>Ayuda</span>
+                </a>
+                <a href="#" class="mobile-action-btn">
+                    <span><img src="/Icons/Trips.png" style="height: 28px;"></span>
+                    <span>Mis viajes</span>
+                </a>
+                <a href="#" class="mobile-action-btn">
+                    <span><img src="/Icons/Join.png" style="height: 28px;"></span>
+                    <span>Afíliate</span>
+                </a>
+                <a href="#" class="mobile-action-btn">
+                    <span><i class="fa-solid fa-user fa-xl"></i></span>
+                    <span>Mi perfil</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="hero" role="banner">
+        <div class="hero-container">
+            <h1>Amazonas, Colombia</h1>
+            <p>Elije la fecha de tu viaje para ver los mejores precios y planes</p>
+
+            <div class="search-container">
+                <div class="search-tabs" role="tablist">
+                    <p>Alojamientos</p>
+                    <a href="#" class="tab active" role="tab" aria-selected="true">Todos</a>
+                    <a href="#" class="tab" role="tab" aria-selected="false">Hoteles</a>
+                    <a href="#" class="tab" role="tab" aria-selected="false">Alquileres</a>
+                </div>
+
+                <form class="search-form" role="search" aria-label="Búsqueda de paquetes turísticos">
+                    <div class="form-group">
+                        <label for="destino"><i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i>
+                            Destino</label>
+                        <select id="destino" name="destino" required>
+                            <option value="Amazonas, Colombia">Amazonas, Colombia</option>
+                            <option value="Tokio, Japon">Tokio, Japón</option>
+                            <option value="Juneau, Alaska">Juneau, Alaska</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="origen"><i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i>
+                            Origen</label>
+                        <select id="origen" name="origen" required>
+                            <option value="bogota">Bogotá, distrito capital</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Fechas</label>
+                        <div class="date-inputs">
+                            <input type="date" id="entrada" name="entrada" aria-label="Fecha de entrada" required>
+                            <input type="date" id="salida" name="salida" aria-label="Fecha de salida" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Habitaciones</label>
+                        <div class="rooms-selector">
+                            <span><i class="fa-solid fa-key fa-lg" style="color: #434343;"></i></span>
+                            <span class="ident">1</span>
+                            <span><i class="fa-solid fa-user fa-lg"></i></span>
+                            <span>2</span>
+                        </div>
+                    </div>
+                </form>
+                <button id="search-btn" type="submit" class="search-btn" aria-label="Buscar paquetes">
+                    <i class="ident fa-solid fa-magnifying-glass fa-sm"></i>Buscar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!--Hoteles-->
+    <section>
+        <div class="accommodations-container">
+            <h1 style="margin-bottom: 1rem; color: #434343; font-size: 2rem;">Alojamientos disponibles en Tokio</h1>
+
+            <div class="accommodations-grid">
+                <!-- Card 1 -->
+                <div class="accommodation-card">
+                    <div class="card-image">
+                        <img src="/Places/HotelAnaconda.png" alt="Hotel Anaconda">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="hotel-name">Hotel Anaconda</h3>
+                            <p class="hotel-distance">A 545 m del centro</p>
+                        </div>
+
+                        <div class="card-rating">
+                            <span class="rating-text">Nivel de reseña (0-10):</span>
+                            <div class="rating-badge excellent">
+                                <i class="fas fa-user"></i>
+                                8.1
+                            </div>
+                        </div>
+
+                        <div class="amenities">
+                            <div class="hotel-category">
+                                <i class="fa-solid fa-hotel fa-lg" style="color: #454545;"></i>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="far fa-star star" style="opacity: 0.3;"></i>
+                                <i class="far fa-star star" style="opacity: 0.3;"></i>
+                            </div>
+                            <i class="fas fa-wifi amenity-icon" style="color: #454545;" title="WiFi gratuito"></i>
+                            <i class="fas fa-fan amenity-icon" style="color: #454545;" title="Aire acondicionado"></i>
+                            <i class="fas fa-swimming-pool amenity-icon" style="color: #454545;" title="Piscina"></i>
+                        </div>
+
+                        <div class="card-actions">
+                            <div class="price-section">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$280.000</span>
+                            </div>
+                            <button class="select-btn">Elegir fecha</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="accommodation-card">
+                    <div class="card-image">
+                        <img src="/Places/DecameronTicuna.webp" alt="Hotel Decameron Ticuna">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="hotel-name">Decameron Decalodge Ticuna</h3>
+                            <p class="hotel-distance">A 685 m del centro</p>
+                        </div>
+
+                        <div class="card-rating">
+                            <span class="rating-text">Nivel de reseña (0-10):</span>
+                            <div class="rating-badge very-good">
+                                <i class="fas fa-user"></i>
+                                9.2
+                            </div>
+                        </div>
+
+                        <div class="amenities">
+                            <div class="hotel-category">
+                                <i class="fa-solid fa-hotel fa-lg" style="color: #454545;"></i>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="far fa-star star" style="opacity: 0.3;"></i>
+                            </div>
+                            <i class="fas fa-wifi amenity-icon" style="color: #454545;" title="WiFi gratuito"></i>
+                            <i class="fas fa-swimming-pool amenity-icon" style="color: #454545;" title="Piscina"></i>
+                            <i class="fas fa-utensils amenity-icon" style="color: #454545;" title="Restaurante"></i>
+                            <i class="fa-solid fa-spa fa-lg" style="color: #454545" title="Spa"></i>
+                            <i class="fas fa-fan amenity-icon" style="color: #454545;" title="Aire acondicionado"></i>
+
+                        </div>
+
+                        <div class="card-actions">
+                            <div class="price-section">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$445.000</span>
+                            </div>
+                            <button class="select-btn">Elegir fecha</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="accommodation-card">
+                    <div class="card-image">
+                        <img src="/Places/OnVacationAmazon.jpg" alt="Hotel On Vacation Amazon">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="hotel-name">Hotel On Vacation Amazon</h3>
+                            <p class="hotel-distance">A 6,91 km del centro</p>
+                        </div>
+
+                        <div class="card-rating">
+                            <span class="rating-text">Nivel de reseña (0-10):</span>
+                            <div class="rating-badge good">
+                                <i class="fas fa-user"></i>
+                                6.4
+                            </div>
+                        </div>
+
+                        <div class="amenities">
+                            <div class="hotel-category">
+                                <i class="fa-solid fa-hotel fa-lg" style="color: #454545;"></i>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="far fa-star star" style="opacity: 0.3;"></i>
+                                <i class="far fa-star star" style="opacity: 0.3;"></i>
+                            </div>
+                            <i class="fas fa-wifi amenity-icon" style="color: #454545;" title="WiFi gratuito"></i>
+                            <i class="fas fa-swimming-pool amenity-icon" style="color: #454545;" title="Piscina"></i>
+                            <i class="fas fa-utensils amenity-icon" style="color: #454545;" title="Restaurante"></i>
+                            <i class="fas fa-fan amenity-icon" style="color: #454545;" title="Aire acondicionado"></i>
+
+                        </div>
+
+                        <div class="card-actions">
+                            <div class="price-section">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$350.000</span>
+                            </div>
+                            <button class="select-btn">Elegir fecha</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 4-->
+                <div class="accommodation-card">
+                    <div class="card-image">
+                        <img src="/Places/NatureHotel.jpg" alt="Hotel Buru Nature">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="hotel-name">Buru Nature Hotel</h3>
+                            <p class="hotel-distance">A 10,85 km del centro</p>
+                        </div>
+
+                        <div class="card-rating">
+                            <span class="rating-text">Nivel de reseña (0-10):</span>
+                            <div class="rating-badge very-good">
+                                <i class="fas fa-user"></i>
+                                7.7
+                            </div>
+                        </div>
+
+                        <div class="amenities">
+                            <div class="hotel-category">
+                                <i class="fa-solid fa-hotel fa-lg" style="color: #454545;"></i>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="far fa-star star" style="opacity: 0.3;"></i>
+                                <i class="far fa-star star" style="opacity: 0.3;"></i>
+                                <i class="far fa-star star" style="opacity: 0.3;"></i>
+                            </div>
+                            <i class="fas fa-wifi amenity-icon" style="color: #454545;" title="WiFi gratuito"></i>
+                            <i class="fas fa-utensils amenity-icon" style="color: #454545;" title="Restaurante"></i>
+                        </div>
+
+                        <div class="card-actions">
+                            <div class="price-section">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$225.000</span>
+                            </div>
+                            <button class="select-btn">Elegir fecha</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sección superior del footer -->
+            <div class="footer-top">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="/Icons/Dreamer_Logo.png" alt="Dreamer" class="footer-logo-img">
+                        <p class="footer-tagline">Tu compañero de viajes ideal</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#">Alojamientos</a></li>
+                        <li><a href="#">Vuelos</a></li>
+                        <li><a href="#">Paquetes turísticos</a></li>
+                        <li><a href="#">Actividades</a></li>
+                        <li><a href="#">Automóviles</a></li>
+                        <li><a href="#">Traslados</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Destinos populares</h3>
+                    <ul>
+                        <li><a href="#">Cartagena</a></li>
+                        <li><a href="#">Punta Cana</a></li>
+                        <li><a href="#">San Andrés</a></li>
+                        <li><a href="#">Medellín</a></li>
+                        <li><a href="#">Cancún</a></li>
+                        <li><a href="#">Miami</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Ayuda</h3>
+                    <ul>
+                        <li><a href="#">Centro de ayuda</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Políticas de cancelación</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+57 (1) 234-5678</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@dreamer.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bogotá, Colombia</span>
+                        </div>
+                    </div>
+
+                    <div class="footer-newsletter">
+                        <h4>Suscríbete a nuestro newsletter</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Tu email" required>
+                            <button type="submit">Suscribirse</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección inferior del footer -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>&copy; 2024 Dreamer. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <div class="footer-payments">
+                        <span>Métodos de pago:</span>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-paypal"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/util.js"></script>
+    <script src="/headerMenu.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        const fechaIda = params.get('fechaIda') || 'No indicada';
+        const fechaVuelta = params.get('fechaVuelta') || 'No indicada';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const inputIda = document.getElementById('entrada');
+            const inputVuelta = document.getElementById('salida');
+
+            if (inputIda) inputIda.value = fechaIda;
+            if (inputVuelta) inputVuelta.value = fechaVuelta;
+        });
+    </script>
+    <script>
+        document.getElementById('search-btn').addEventListener('click', function () {
+            document.querySelector('.search-form').requestSubmit();
+        });
+    </script>
+</body>
+
+</html>

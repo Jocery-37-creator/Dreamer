@@ -15,7 +15,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background-image: url('/Places/JaponWall.jpg');
+    background-image: url('/Places/AmazonasWall.jpg');
     background-repeat: no-repeat;
     background-position: center;
     color: white;
@@ -46,7 +46,7 @@ body {
 /* Search Form */
 
 .search-container {
-    background-image: url('/Forms/Dreamer_TicketSearchRed.png');
+    background-image: url('/Forms/Dreamer_TicketSearchGreen.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -85,9 +85,9 @@ body {
 
 .tab.active {
     background: white;
-    color: rgb(173, 79, 79);
+    color: rgb(81, 173, 79);
     font-weight: 700;
-    text-shadow: 0 1px 3px rgba(173, 79, 79, 0.4);
+    text-shadow: 0 1px 3px rgba(79, 173, 82, 0.4);
 }
 
 .search-form {
@@ -200,7 +200,7 @@ body {
 
 .accommodation-card {
     display: flex;
-    background: rgba(153, 68, 68, 0.07);
+    background: rgba(81, 153, 68, 0.07);
     border-radius: 7px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     overflow: hidden;
