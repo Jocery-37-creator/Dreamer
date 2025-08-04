@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamer - Perfil</title>
+    <link rel="shortcut icon" href="/Icons/Icon_TabD.png" type="image/x-icon">
+    <link rel="stylesheet" href="user-profile.css" />
+    <link rel="stylesheet" href="/HeaderStyles/headerUser.css" />
+    <script src="https://kit.fontawesome.com/0507741b90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header" role="banner">
+        <div class="header-container">
+            <a href="/Main/main.html" aria-label="Dreamer - Página principal"><img class="logo"
+                    src="/Icons/Dreamer_Logo.png" /></a>
+            <nav class="nav-menu" role="navigation" aria-label="Menú principal">
+                <a href="#" class="nav-item" aria-label="Alojamientos">
+                    <span><img class="nav-icon" src="/Icons/Accommodation.png" /></span>
+                    <span>Alojamientos</span>
+                </a>
+                <a href="#" class="nav-item" aria-label="Vuelos">
+                    <span><img style="opacity:0.75" class="nav-icon" src="/Icons/Plane.png" /></span>
+                    <span>Vuelos</span>
+                </a>
+                <a href="/Main/main.html" class="nav-item active" aria-label="Paquetes - Página actual"
+                    aria-current="page">
+                    <span><img class="nav-icon active" src="/Icons/Packs.png" /></span>
+                    <span>Paquetes</span>
+                </a>
+                <a href="#" class="nav-item" aria-label="Ofertas">
+                    <span><img style="opacity:0.75" class="nav-icon" src="/Icons/Sale.png" /></span>
+                    <span>Ofertas</span>
+                </a>
+                <a href="#" class="nav-item" aria-label="Actividades">
+                    <span><img class="nav-icon" src="/Icons/Activities.png" /></span>
+                    <span>Actividades</span>
+                </a>
+                <a href="#" class="nav-item" aria-label="Automóviles">
+                    <span><img class="nav-icon" src="/Icons/Cars.png" /></span>
+                    <span>Automóviles</span>
+                </a>
+                <a href="#" class="nav-item" aria-label="Traslados">
+                    <span><img class="nav-icon" src="/Icons/Transfers.png" /></span>
+                    <span>Traslados</span>
+                </a>
+                <a href="/Destinations/disney.html" class="nav-item" aria-label="Disney">
+                    <span><img style="opacity:0.75" class="nav-icon" src="/Icons/Disney.png" /></span>
+                    <span>Disney</span>
+                </a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#" class="action-btn help-btn" aria-label="Ayuda">
+                    <span><i class="fa-regular fa-circle-question fa-xl"></i></span>
+                    <span style="font-weight: 700; margin-left: 3px; padding-right: 5px;">Ayuda</span>
+                </a>
+                <a href="#" class="action-btn" aria-label="Mis viajes">
+                    <span><img class="action-icon" src="/Icons/Trips.png"></span>
+                    <span style="font-weight: 700; margin-left: 3px; color: rgb(46, 46, 46);">Mis viajes</span>
+                </a>
+                <a href="#" class="action-btn" aria-label="Afíliate">
+                    <span><img class="action-icon" src="/Icons/Join.png"></span>
+                    <span style="font-weight: 700; margin-left: 3px; color: rgb(46, 46, 46)">Afíliate</span>
+                </a>
+                <a href="#" class="action-btn" aria-label="Perfil de usuario">
+                    <span class="user burger"><i class="fa-solid fa-bars fa-xl"></i></span>
+                    <span class="user"><i class="fa-solid fa-user fa-2xl"></i></span>
+                </a>
+                <button class="hamburger" aria-label="Menú" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <nav role="navigation" aria-label="Menú móvil">
+                <a href="#" class="mobile-nav-item">
+                    <span class="mobile-nav-icon"><img src="/Icons/Accommodation.png" style="height: 32px;"></span>
+                    <span>Alojamientos</span>
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <span class="mobile-nav-icon"><img src="/Icons/Plane.png"
+                            style="height: 32px; opacity: 0.75;"></span>
+                    <span>Vuelos</span>
+                </a>
+                <a href="#" class="mobile-nav-item active">
+                    <span class="mobile-nav-icon active"><img src="/Icons/Packs.png" style="height: 32px;"></span>
+                    <span>Paquetes</span>
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <span class="mobile-nav-icon"><img src="/Icons/Sale.png"
+                            style="height: 32px; opacity: 0.75;"></span>
+                    <span>Ofertas</span>
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <span class="mobile-nav-icon"><img src="/Icons/Activities.png" style="height: 32px;"></span>
+                    <span>Actividades</span>
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <span class="mobile-nav-icon"><img src="/Icons/Cars.png" style="height: 32px;"></span>
+                    <span>Automóviles</span>
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <span class="mobile-nav-icon"><img src="/Icons/Transfers.png" style="height: 32px;"></span>
+                    <span>Traslados</span>
+                </a>
+                <a href="#" class="mobile-nav-item">
+                    <span class="mobile-nav-icon"><img src="/Icons/Disney.png"
+                            style="height: 32px; opacity: 0.75;"></span>
+                    <span>Disney</span>
+                </a>
+            </nav>
+
+            <div class="mobile-actions">
+                <a href="#" class="mobile-action-btn help">
+                    <span><i class="fa-regular fa-circle-question fa-xl"></i></span>
+                    <span>Ayuda</span>
+                </a>
+                <a href="#" class="mobile-action-btn">
+                    <span><img src="/Icons/Trips.png" style="height: 28px;"></span>
+                    <span>Mis viajes</span>
+                </a>
+                <a href="#" class="mobile-action-btn">
+                    <span><img src="/Icons/Join.png" style="height: 28px;"></span>
+                    <span>Afíliate</span>
+                </a>
+                <a href="#" class="mobile-action-btn">
+                    <span><i class="fa-solid fa-user fa-xl"></i></span>
+                    <span>Mi perfil</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="profile-avatar">MR</div>
+                <h3 class="profile-name">María Rodríguez</h3>
+                <p class="profile-email">maria.rodriguez@email.com</p>
+            </div>
+
+            <nav>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link active">
+                            <i class="fas fa-tachometer-alt menu-icon"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="fas fa-suitcase menu-icon"></i>
+                            Mis Reservas
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="fas fa-heart menu-icon"></i>
+                            Favoritos
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="fas fa-history menu-icon"></i>
+                            Historial
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="fas fa-credit-card menu-icon"></i>
+                            Pagos
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="fas fa-cog menu-icon"></i>
+                            Configuración
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="fas fa-sign-out-alt menu-icon"></i>
+                            Cerrar Sesión
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Content Area -->
+        <main class="content-area">
+            <div class="content-header">
+                <h1 class="content-title">¡Bienvenida, María!</h1>
+                <p class="content-subtitle">Gestiona tus viajes y descubre nuevos destinos</p>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Viajes Realizados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Reservas Activas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">28</div>
+                    <div class="stat-label">Países Visitados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">★ 4.9</div>
+                    <div class="stat-label">Calificación Promedio</div>
+                </div>
+            </div>
+
+            <!-- Recent Bookings -->
+            <section class="bookings-section">
+                <h2 class="section-title">
+                    <i class="fas fa-calendar-alt"></i>
+                    Próximos Viajes
+                </h2>
+
+                <div class="booking-card">
+                    <div class="booking-header">
+                        <div>
+                            <h3 class="booking-destination">Disney World, Orlando</h3>
+                            <p class="booking-dates">15 - 22 Marzo 2024 • 7 días</p>
+                        </div>
+                        <span class="booking-status status-confirmed">Confirmado</span>
+                    </div>
+                    <div class="booking-details">
+                        <div class="booking-price">$2'330.000</div>
+                        <div class="booking-actions">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-eye"></i>
+                                Ver Detalles
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fas fa-download"></i>
+                                Descargar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-card">
+                    <div class="booking-header">
+                        <div>
+                            <h3 class="booking-destination">Cartagena, Colombia</h3>
+                            <p class="booking-dates">5 - 10 Abril 2024 • 5 días</p>
+                        </div>
+                        <span class="booking-status status-pending">Pendiente</span>
+                    </div>
+                    <div class="booking-details">
+                        <div class="booking-price">$1'850.000</div>
+                        <div class="booking-actions">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-credit-card"></i>
+                                Completar Pago
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fas fa-edit"></i>
+                                Modificar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-card">
+                    <div class="booking-header">
+                        <div>
+                            <h3 class="booking-destination">Punta Cana, República Dominicana</h3>
+                            <p class="booking-dates">20 - 27 Mayo 2024 • 7 días</p>
+                        </div>
+                        <span class="booking-status status-confirmed">Confirmado</span>
+                    </div>
+                    <div class="booking-details">
+                        <div class="booking-price">$2'100.000</div>
+                        <div class="booking-actions">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fas fa-eye"></i>
+                                Ver Detalles
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Ver Mapa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section>
+                <h2 class="section-title">
+                    <i class="fas fa-bolt"></i>
+                    Acciones Rápidas
+                </h2>
+
+                <div class="quick-actions">
+                    <a href="#" class="action-card">
+                        <div class="action-iconU">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="action-title">Buscar Viajes</h3>
+                        <p class="action-description">Encuentra tu próximo destino ideal</p>
+                    </a>
+
+                    <a href="#" class="action-card">
+                        <div class="action-iconU">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3 class="action-title">Ofertas Especiales</h3>
+                        <p class="action-description">Descubre promociones exclusivas</p>
+                    </a>
+
+                    <a href="#" class="action-card">
+                        <div class="action-iconU">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="action-title">Soporte 24/7</h3>
+                        <p class="action-description">Contacta nuestro equipo de ayuda</p>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/util.js"></script>
+    <script src="/headerMenu.js"></script>
+</body>
+
+</html>

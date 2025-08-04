@@ -52,12 +52,6 @@
     color: #4fa0ad;
 }
 
-.nav-item.active {
-    background: #4fa0ad;
-    color: white;
-    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
-}
-
 .nav-icon {
     height: 32px;
     margin-bottom: 0.1rem;
@@ -66,10 +60,6 @@
 
 .nav-icon:hover {
     transform: scale(1.1);
-}
-
-.nav-icon.active {
-    filter: invert(100%) brightness(2);
 }
 
 .header-actions {
@@ -192,22 +182,12 @@
     color: #4fa0ad;
 }
 
-.mobile-nav-item.active {
-    background: #4fa0ad;
-    border-radius: 10px ;
-    color: white;
-}
-
 .mobile-nav-item:last-child {
     border-bottom: none;
 }
 
 .mobile-nav-icon {
     font-size: 1.5rem;
-}
-
-.mobile-nav-icon.active{
-    filter: invert(1) brightness(2);
 }
 
 .mobile-actions {
