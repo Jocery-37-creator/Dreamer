@@ -85,7 +85,7 @@ body {
 
 .tab.active {
     background: white;
-    color: rgb(79, 160, 173);
+    color: rgb(61, 125, 135);
     font-weight: 700;
     text-shadow: 0 1px 3px rgba(79, 160, 173, 0.4);
 }
@@ -160,7 +160,7 @@ body {
 }
 
 .search-btn {
-    background: #e13c2d;
+    background: #d5392b;
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -250,7 +250,7 @@ body {
 }
 
 .select-date-btn {
-    background: #3d83f9;
+    background: #3571d9;
     color: white;
     padding: 0.7rem 1.5rem;
     border: none;

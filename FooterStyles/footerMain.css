@@ -148,8 +148,8 @@
 
 .newsletter-form button {
     padding: 0.8rem 1.5rem;
-    background: #4fa0ad;
-    color: white;
+    background: #1D8147;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     font-size: 0.9rem;
@@ -157,10 +157,11 @@
     cursor: pointer;
     transition: all 0.3s ease;
     white-space: nowrap;
+    box-shadow: 0 0 3px #27af60;
 }
 
 .newsletter-form button:hover {
-    background: #46919d;
+    background: #27af60;
     transform: translateY(-1px);
 }
 

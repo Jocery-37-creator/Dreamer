@@ -53,7 +53,7 @@
 }
 
 .nav-item.active {
-    background: #4fa0ad;
+    background: #3e7e88;
     color: white;
     text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
 }
@@ -97,9 +97,9 @@
 }
 
 .help-btn {
-    background: #4fa0ad;
+    background: #3e7e88;
     color: white;
-    background-color: #46919d;
+    background-color: #3e7e88;
     mask: url('/Forms/Dreamer_help.svg') no-repeat center;
     mask-size: cover;
 }
